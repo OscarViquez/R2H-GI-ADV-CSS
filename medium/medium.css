@@ -14,34 +14,67 @@ a {
 }
 
 body {
-  font-family: 'Source Sans Pro', sans-serif;
+  font-family: 'inter', sans-serif;
 }
 
 main {
-  margin-top: 10rem;
+  margin: 2rem;
   display: grid;
+  justify-content: space-around;
   place-content: center;
-  grid-template-rows: repeat(2, auto);
-  grid-template-columns: repeat(4, auto);
-  gap: 2rem;
+  grid-template-rows: repeat(2, 320px);
+  grid-template-columns: repeat(4, 25%);
+  gap: 1rem;
 }
 
 article {
-  border: #f1f1f1 solid 2px;
+  border: #eeeeee solid 2px;
+  border-radius: 20px;
   box-shadow: 7px 10px 14px 0px rgba(0, 0, 0, 0.1);
-  padding: 2rem;
+  
+  padding: 1rem .8rem;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  gap: 1rem;
+}
+
+img {
+  width: 40%;
 }
 
 h2 {
   font-weight: 600;
+  font-size: 18px;
+  line-height: 1.2;
+  margin-bottom: .8rem;
 }
+
+.price {
+  display: inline-block;
+  color: hsl(32, 77%, 50%);
+
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: .8rem;
+  
+}
+
+p {
+  font-size: 15px;
+  line-height: 1.2;
+  margin-bottom: .8rem;
+}
+
 
 .shop-button {
   display: inline-block;
   background-color: hsl(32, 93%, 52%);
+  color: #f1f1f1;
+
   width: 200px;
   padding: .6rem 0;
   text-align: center;
   font-weight: 600;
-  color: #f1f1f1;
 }
